@@ -1,0 +1,24 @@
+#bienvenida{	
+	background: url("../imagenes/fondo_presentacion.jpg");
+	height: 1000px;
+	background-repeat: no-repeat;
+	line-height: 500px;
+}
+
+.frase{
+	display: inline-block;
+	width: 30%;
+}
+
+#menu li, #derechos, #suscribirse{
+	display: inline-block;
+	font-size: 1.5em;
+}
+
+#derechos, #suscribirse {
+	width: 40%;
+}
+
+#suscribirse label {
+	width: 40%;
+}

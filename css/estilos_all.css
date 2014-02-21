@@ -1,0 +1,65 @@
+body {
+	/*1em = 20px*/
+	font-size: 100%;
+	font-family: "Monda";
+}
+/*selector de etiqueta*/
+header, footer {
+	color: white;
+	background-color: #34302d;
+	padding: 0.5em;
+}
+footer {
+	/*-up, -right, -left*/
+	padding-bottom: 6em;
+}
+/*selector de id*/
+#frases {
+	background-color: green;
+	color: white;
+}
+#bienvenida {
+	color: white;
+	text-align: center;
+	font-size: 2em;
+	/*background-size: cover;*/
+}
+/*selector de clase*/
+.frase {
+	text-align: center;
+	margin: .5em;
+}
+
+.frase p {
+	font-size: 1.5em;
+}
+/*selector de descendientes*/
+#menu li, #derechos, #suscribirse {
+	margin: 0.7em;
+}
+
+#email {
+	width: 80%;
+}
+
+
+/**TRANSICION*/
+#redes-sociales img {
+	transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+}
+/*Transformacion*/
+#redes-sociales img:hover {
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);/*firefox*/
+	-webkit-transform: rotate(180deg);/*chrome*/
+	-o-transform: rotate(180deg);/*safari y opera*/
+	-ms-transform: rotate(180deg);/*ie +8*/
+}
+
+video {
+	max-width: 100%;
+}
