@@ -29,3 +29,37 @@ app.get("/index", function(request,response){
 	//la logica de como respondere a la peticion /index
 	response.render("index");
 });
+/*Responder a una peticion post*/
+app.post("/suscribirse",function(request, response){
+	console.log("Email:" + request.body.email);
+	response.render("respuesta_suscribirse",{
+		asunto: "Yo soy el servidor",
+		email: request.body.email
+	});
+});
+
+//************Ejercicio practico contacto*****
+//Hacemos que el servidor responda a peticiones get
+app.get("/contacto", function(request,response){
+	//la logica de como respondere a la peticion /index
+	response.render("contacto");
+});
+/*Responder a una peticion post*/
+app.post("/contactarse",function(request, response){
+	console.log("Email:" + request.body.nombre);
+	console.log("Email:" + request.body.email);
+	console.log("Email:" + request.body.wsite);
+	console.log("Email:" + request.body.edad);
+	console.log("Email:" + request.body.coment);
+	response.render("r_contacto",{
+		asunto: "Yo soy el servidor",
+		nombre: request.body.nombre,
+		email: request.body.email,
+		wsite: request.body.wsite,
+		edad: request.body.edad,
+		coment: request.body.coment
+	});
+});
+
+
+
