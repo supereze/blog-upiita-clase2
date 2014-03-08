@@ -76,8 +76,11 @@
                 </div>
             </div>
             <div id="suscribirse">
+            	<form action="/suscribirse" method="post">
                 <label for="email">Suscríbete:</label>
-                <input id="email" type="text" />
+                <input id="email" type="text" name="email"/>
+                <input value="enviar" type="submit"/>
+                </form>
             </div>
         </footer>
     </body>

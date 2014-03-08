@@ -5,18 +5,16 @@ var express= require("express");
 var app=express();
 /*Hacemos que  la pagina sea dinamica*/ //para obtener las librerias va antes de levantar la pagina 
 var consolidate = require("consolidate");/*libreria que nos permite configurar vista*/
-var dust = require();//Motor para crear vistas dinamicas
+var dust = require("dustjs-linkedin");//Motor para crear vistas dinamicas
 /*tipo de puerto por el que se atiendan las peticiones*/
 app.listen(8081);
 /*Imprime en la consola del servidor*/
 console.log("servidor levantado...");
 /*despacha archivos estaticos*/
-app.use("/ejemplos", express.static(__dirname + "/ejemplos"));
-app.use("/ejercicios", express.static(__dirname + "/ejercicios"));
-app.use("/ejercicios_terminados", express.static(__dirname + "/ejercicios_terminados"));
+//app.use("/", express.static(__dirname + "/vistas"));
+app.use("/css", express.static(__dirname + "/css"));
 app.use("/imagenes", express.static(__dirname + "/imagenes"));
-app.use("/javascript", express.static(__dirname + "/javascript"));
-/****ruta logica y una real***/
+app.use("/videos", express.static(__dirname + "/videos"));
 
 //configurar nuestro motor de vistas
 app.set("view engine","dust");//nuestras vistas tendran extension .dust
@@ -29,5 +27,5 @@ app.use(express.urlencoded());
 //Hacemos que el servidor responda a peticiones get
 app.get("/index", function(request,response){
 	//la logica de como respondere a la peticion /index
-	response.reder("index");
+	response.render("index");
 });
