@@ -1,6 +1,6 @@
 #bienvenida{	
 	background: url("../imagenes/fondo_presentacion.jpg");
-	height: 1000px;
+	height: 500px;
 	background-repeat: no-repeat;
 	line-height: 500px;
 }
@@ -11,6 +11,8 @@
 }
 
 #menu li, #derechos, #suscribirse{
+	margin-left: 3em;
+	margin-right: 4em;
 	display: inline-block;
 	font-size: 1.5em;
 }
@@ -21,4 +23,30 @@
 
 #suscribirse label {
 	width: 40%;
+}
+#redesScociales img:hover{
+				transform: rotate(180deg);
+				-moz-transform: rotate(180deg);
+				-webkit-transform: rotate(180deg);
+				-o-transform: rotate(180deg);
+				-ms-transform: rotate(180deg);
+				
+			/*para que lo haga mas lento*/
+				transition: all 1s ease;
+				-moz-transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				-ms-transition: all 1s ease;
+			}
+#frases img:hover{
+				transform: rotatey(180deg);
+				-moz-transform: rotatey(180deg);
+				-webkit-transform: rotatey(180deg);
+				-o-transform: rotatey(180deg);
+				/*para que lo haga mas lento*/
+				transition: all 1s ease;
+				-moz-transition: all 1s ease;
+				-webkit-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				-ms-transition: all 1s ease;
 }

@@ -8,6 +8,7 @@ header, footer {
 	color: white;
 	background-color: #34302d;
 	padding: 0.5em;
+	border-radius: 1em;
 }
 footer {
 	/*-up, -right, -left*/
@@ -22,6 +23,7 @@ footer {
 	color: white;
 	text-align: center;
 	font-size: 2em;
+	text-shadow: 3px 4px 3px white;
 	/*background-size: cover;*/
 }
 /*selector de clase*/
@@ -33,9 +35,11 @@ footer {
 .frase p {
 	font-size: 1.5em;
 }
+
 /*selector de descendientes*/
 #menu li, #derechos, #suscribirse {
 	margin: 0.7em;
+	text-shadow: 3px 4px 3px white;
 }
 
 #email {
