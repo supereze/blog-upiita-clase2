@@ -42,9 +42,9 @@ footer {
 	text-shadow: 3px 4px 3px white;
 }
 
-#email {
+/*#email {
 	width: 80%;
-}
+}*/
 
 
 /**TRANSICION*/
@@ -65,5 +65,9 @@ footer {
 }
 
 video {
-	max-width: 100%;
+	width: 100%;
+}
+#menu a{
+	color:white;
+	text-decoration: none;
 }

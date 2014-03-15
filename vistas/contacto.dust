@@ -16,13 +16,16 @@
                <nav>
                 <ul id="menu">
                     <li>
-                        Inicio
+                        <a href="/index">Inicio</a>
                     </li>
                     <li>
                         Productos
                     </li>
                     <li>
                         Blog
+                    </li>
+                      <li>
+                        <a href="/contacto">Contacto</a>
                     </li>
                     <li>
                         Acerca
@@ -33,16 +36,16 @@
         <section>
         	<form action="/contactarse" method="post">
         		<label for="nombre">Nombre:</label>
-                <input id="nombre" type="text" name="nombre"/>
+                <input id="nombre" type="text" name="nombre"/><br />
                 <label for="email">Email:</label>
-                <input id="email" type="text" name="email"/>
+                <input id="email" type="text" name="email"/><br />
                 <label for="wsite">Web site:</label>
-                <input id="wsite" type="text" name="wsite"/>
+                <input id="wsite" type="text" name="wsite"/><br />
                 <label for="edad">Edad:</label>
-                <input id="edad" type="text" name="edad"/>
+                <input id="edad" type="text" name="edad"/><br />
                 <label for="coment">Comentario:</label>
-                <textarea id="coment" name="coment"></textarea>
-                <input value="enviar" type="submit"/>
+                <textarea id="coment" name="coment"></textarea><br />
+                <input value="enviar" type="submit"/><br />
             </form>
         </section>
          <footer>
